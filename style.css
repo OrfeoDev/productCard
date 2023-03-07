@@ -1,0 +1,197 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+/*.card {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+
+}
+
+img {
+    border-radius: 20px 0 0 20px;
+    height: 400px;
+    width: 20rem;
+}
+
+.card-details {
+    border-radius: 0 20px 20px 0;
+    background-color: white;
+    height: 400px;
+    width: 20rem;
+}
+
+.product {
+    margin: 20px;
+}
+
+.titre {
+    font-family: Fraunces, sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 2rem;
+}
+
+.name {
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0 0 20px;
+
+}
+
+.descriptif {
+    font-family: Fraunces, sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    margin: 0 0 20px;
+
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+    font-family: Montserrat, sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    margin: 0 0 15px;
+
+}
+
+#add {
+    display: block;
+    margin: 0 auto;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 25px;
+    }
+
+    .card-img {
+
+    }
+
+    img {
+        border-radius: 20px 20px 0 0;
+        height: 200px;
+        width: 20rem;
+    }
+
+    .card-details {
+        padding: 10px;
+        border-radius: 0;
+        height: 300px;
+        width: 20rem;
+
+    }
+}*/
+
+/*Grid*/
+.carte {
+    width: 630px;
+    height: 330px;
+    margin: 15px auto;
+    display: grid;
+    /* grid-template-rows: repeat(2, 300px);
+     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));*/
+    grid-template-columns: repeat(2, 300px);
+
+    /*width: 30%;*/
+}
+
+.carte-details {
+    background-color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+
+.titre1 {
+    margin: 10px;
+    font-family: Montserrat, sans-serif;
+    color: darkgray;
+    font-size: 10px ;
+}
+.nom{
+    margin: 10px;
+    font-family: Fraunces, sans-serif;
+    font-size: 22px;
+}
+
+.descriptifs {
+    margin: 10px;
+    font-family: Montserrat, sans-serif;
+    color: darkgray;
+    font-size:15px ;
+}
+
+.carte-img {
+    background: url("images/image-product-desktop.jpg");
+    background-size: cover;
+    filter: brightness(90%);
+    border-radius: 5px 0 0 5px;
+}
+
+.prix {
+    display: flex;
+    justify-content:space-evenly;
+    margin: 10px;
+    padding: 15px;
+    font-size: 20px;
+    color: hsl(158, 36%, 37%);
+    font-family: Fraunces, sans-serif;
+    font-weight: bolder;
+}
+.barre{
+    color: darkgray;
+    font-size: 10px;
+    text-decoration:line-through;
+}
+
+#ajout-pa {
+    display: block;
+    margin: 50px auto;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    width: 200px;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+button:hover{
+    cursor: pointer;
+}
+#compteur{
+    font-family: Fraunces, sans-serif;
+}
+@media screen and (max-width: 600px) {
+    .carte {
+
+        display: grid;
+         grid-template-rows:300px;
+        /* grid-template-columns: repeat(auto-fit, minmax(300px,1fr));*/
+         grid-template-columns: 300px;
+        justify-content: center;
+
+    }
+}
+
